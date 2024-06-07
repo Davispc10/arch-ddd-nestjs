@@ -1,7 +1,7 @@
-import { NestExpressApplication } from '@nestjs/platform-express';
+import { NestFastifyApplication } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
-export const swaggerConfig = (app: NestExpressApplication): void => {
+export const swaggerConfig = (app: NestFastifyApplication): void => {
   const options = new DocumentBuilder()
     .setTitle('Arch DDD Nestjs API')
     .setDescription('API description')
