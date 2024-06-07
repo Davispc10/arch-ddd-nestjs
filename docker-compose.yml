@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: api
-    entrypoint: sh -c 'pnpm install --frozen-lockfile && pnpm start:dev'
+    # entrypoint: sh -c 'pnpm install --frozen-lockfile && pnpm start:dev'
     depends_on:
       - mongodb
     networks:
