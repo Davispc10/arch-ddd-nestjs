@@ -1,5 +1,5 @@
 import { UserProps } from 'src/domain/user/user';
-import { UserModel } from 'src/infraestructure/database/mongodb/models/user/user.model';
+import { UserModel } from 'src/infrastructure/database/mongodb/models/user/user.model';
 
 export interface UserRepositoryInterface {
   create: (user: UserProps) => Promise<UserModel>;

@@ -29,4 +29,3 @@ export class UserModel {
 }
 
 export const UserSchema = SchemaFactory.createForClass(UserModel);
-4;

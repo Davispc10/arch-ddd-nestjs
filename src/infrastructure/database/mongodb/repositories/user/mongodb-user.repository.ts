@@ -21,7 +21,7 @@ export class MongoDBUserRepository implements UserRepositoryInterface {
   }
 
   async findById(id: string): Promise<UserModel | null> {
-    const user = await this.userCollection.findById(id).exec();
+    const user = await this.userCollection.findById(id);
     return user;
   }
 
